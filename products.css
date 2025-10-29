@@ -1,0 +1,113 @@
+.shop-content-wrapper {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.sidebar-filters {
+    width: 280px;
+    background-color: #ffffff; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 20px;
+}
+.sidebar-filters h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    color: #333;
+}
+.filter-group {
+    margin-bottom: 25px;
+}
+.filter-group h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #1e90ff;
+    font-weight: 600;
+}
+.filter-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #555;
+    padding-left: 0; 
+}
+.filter-option input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-top: 0; 
+    border: 1px solid #aaa;
+    border-radius: 4px; 
+    background-color: #fff;
+    cursor: pointer;
+    
+    transition: border-color 0.2s, background-color 0.2s;
+    position: relative;
+}
+.filter-option input[type="checkbox"]:checked {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+}
+.filter-option input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#apply-filters-btn, #reset-filters-btn {
+    width: 100%;
+    margin-top: 15px; 
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+#apply-filters-btn {
+    background-color: #1e90ff;
+    color: white;
+}
+#apply-filters-btn:hover {
+    background-color: #0d79e5;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);
+}
+#reset-filters-btn {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+#reset-filters-btn:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product-catalog {
+    flex-grow: 1;
+}
+.product-catalog h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.product-catalog .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}

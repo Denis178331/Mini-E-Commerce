@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NovaTech | Login / Register</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login_register.css">
+    </head>
+
+    <body>
+        <main class="auth-container">
+            <div class="auth-card">
+                <div class="auth-visual-panel">
+                    <div class="tech-initials">NT</div>
+
+                    <h2>Welcome!</h2>
+                    <p id="toggle-text">Already have an account?<a href="#" id="toggle-auth-mode">Log In</a></p>
+                </div>
+
+                <div class="auth-form-panel">
+                    <div id="login-form-section" class="form-section active">
+                        <h2>Log in to Your Account</h2>
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="login-email">Email Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope icon"></i>
+                                    <input type="email" id="login-email" placeholder="Enter your email address...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock icon"></i>
+                                    <input type="password" id="login-password" placeholder="Enter your password...">
+                                    <span class="toggle-password" data-target="login-password">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember-me">
+                                    <label for="remember-me">Remember me</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn auth-btn">Log In</button>
+                        </form>
+                        <p class="or-separator"><span>OR CONTINUE WITH</span></p>
+                        <div class="social-login">
+                            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon apple"><i class="fab fa-apple"></i></a>
+                        </div>
+                        <p class="switch-auth-link">Don't have an account? <a href="#" id="switch-to-register">Sign Up</a></p>
+                    </div>
+
+                    <div id="register-form-section" class="form-section">
+                        <h2>Create New Account</h2>
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="register-name">Name Surname</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user icon"></i>
+                                    <input type="text" id="register-name" placeholder="Enter your first and last name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">Email Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope icon"></i>
+                                    <input type="email" id="register-email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Password</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock icon"></i>
+                                    <input type="password" id="register-password" placeholder="Create a strong password">
+                                    <span class="toggle-password" data-target="register-password">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                                <p class="password-strength" id="register-password-indicator">Password Strength: Not entered</p>
+                            </div>
+                            <button type="submit" class="btn auth-btn">Create Account</button>
+                        </form>
+                        <p class="or-separator"><span>OR SIGN UP WITH</span></p>
+                        <div class="social-login">
+                            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon apple"><i class="fab fa-apple"></i></a>
+                        </div>
+                        <p class="switch-auth-link">Do you already have an account? <a href="#" id="switch-to-login">Log In</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="login_register.js"></script>
+    </body>
+</html>

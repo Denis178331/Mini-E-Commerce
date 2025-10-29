@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NovaTech | Products</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="products.css">
+        </head>
+    <body>
+        <header>
+            <nav class="navbar">
+               <a href="index.html" class="logo-link">
+                 <div class="logo">Nova<span>Tech</span></div> 
+               </a>
+               <div class="search-bar">
+                 <form action="#" method="get">
+                     <input type="text" id="search-input" placeholder="Search for products...">
+                     <button type="submit">🔍</button>
+                 </form>
+                 <div id="search-result-container">                  
+                 </div>
+               </div>
+               <ul class="user-links">
+                 <li><a href="account.html" class="account-link">👤 Account</a></li>
+                 <li><a href="cart.html" class="cart-link">🛒 Cart<span class="cart-count">0</span></a></li>
+               </ul>
+             </nav>
+        </header>
+        <nav class="main-nav">
+            <ul class="main-link">
+             <li><a href="products.html">Products</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="customersupport.html">Customer Support</a></li>
+            </ul>
+       </nav>
+       
+       <main class="shop-content-wrapper">
+           
+           <aside class="sidebar-filters">
+               <h2>Filters</h2>
+               
+               <div class="filter-group">
+                   <h3>Price</h3>
+                   <label class="filter-option">
+                       <input type="checkbox" name="price-filter" value="low"> Under €70
+                   </label>
+                   <label class="filter-option">
+                       <input type="checkbox" name="price-filter" value="medium"> €70 - €150
+                   </label>
+                   <label class="filter-option">
+                       <input type="checkbox" name="price-filter" value="high"> Over €150
+                   </label>
+               </div>
+               
+              <button id="apply-filters-btn" class="btn">Apply Filters</button>
+               <button id="reset-filters-btn" class="btn secondary">Reset</button>
+
+           </aside>
+
+           <section class="product-catalog">
+               <h2>Our Full Catalog</h2>
+               <div id="full-product-list" class="product-grid"></div>
+           </section>
+       </main>
+
+        <footer>
+            <p>© 2025 NovaTech. All rights reserved.</p>
+        </footer>
+        <script src="cart.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>

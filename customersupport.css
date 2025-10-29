@@ -1,0 +1,152 @@
+.support-page-content {
+    max-width: 900;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.page-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 50px;
+}
+.faq-container h2 {
+    font-size: 2rem;
+    color: #1e90ff;
+    margin-bottom: 30px;
+}
+.faq-group {
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+.group-title {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.accordion-item {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.accordion-header {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+.accordion-header:hover {
+    background-color: #f0f0f0;
+}
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+.accordion-header.active::after {
+    content: '-';
+}
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eee;
+}
+.accordion-content.open {
+    max-height: 500px;
+    padding: 15px 20px;
+}
+.accordion-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+}
+.contact-methods {
+    margin-top: 60px;
+}
+
+.contact-methods h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card .icon {
+    font-size: 2rem;
+    color: #1e90ff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-btn.secondary {
+    background-color: #ff5722; 
+}
+.contact-btn.tertiary {
+    background-color: #4CAF50;
+}

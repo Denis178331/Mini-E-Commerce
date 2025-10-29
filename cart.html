@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="cart.css">
+    </head>
+    <body>
+        <header class="page-header">
+         <h1>My Shopping Cart</h1>
+        </header>
+        <div class="cart-grid-container">
+         <div class="cart-item-section card">
+          <h2 class="section-title">Products (<span id="item-count">0</span>)</h2>
+          <div id="cart-items" class="item-list"></div>
+          <div class="cart-footer">
+           <a href="#" class="continue-shopping-link">
+            <i class="fas fa-chevron-left mr-2"></i>
+            Continue Shopping
+           </a>
+           <button id="clear-cart-btn" class="clear-cart-btn">
+            Empty Cart
+           </button>
+          </div>
+         </div>
+        <div class="summary-section card">
+        <h2 class="section-title">Order Summary</h2>
+        <div class="summary-details">
+            <div class="summary-row border-bottom">
+                <span class="detail-label">Subtotal:</span>
+                <span class="detail-value" id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span class="detail-label">Shipping:</span>
+                <span class="detail-value free-shipping" id="shipping-cost">FREE</span>
+            </div>
+            <div class="summary-row">
+                <span class="detail-label">Tax (19%):</span>
+                <span class="detail-value" id="tax">$0.00</span>
+            </div>
+            <div class="summary-row total-row">
+                <span class="total-label">TOTAL:</span>
+                <span class="total-value" id="total">$0.00</span>
+            </div>
+        </div>
+        <button class="btn-primary checkout-btn">
+            Proceed to Checkout
+        </button>
+    </div>
+</div>
+<div class="test-btn-container">
+    <button id="add-dummy-item-btn" class="add-test-btn">
+        + Add New Product (Test)
+    </button>
+</div>
+<script src="cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+.contact-page-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info form" "map map";
+}
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.contact-info {
+    grid-area: info;
+    padding-right: 20px;
+}
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.details-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #1e90ff;
+}
+.details-box h3 {
+    color: #1e90ff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.details-box p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+.contact-form-container {
+    grid-area: form;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333;
+    border-radius: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+    outline: none;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.send-message-btn {
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.send-message-btn:hover {
+    background-color: #0d79e5;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);
+}
+.contact-map {
+    grid-area: map;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.contact-map h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
